@@ -6,6 +6,6 @@ application:
 routers:
     - name: 'main-express'
       routes:
-          - application_name: 'test-express-app'
+          - application_name: 'express'
             paths:
                 - '/*'
