@@ -1,0 +1,11 @@
+---
+application:
+    name: 'test-express-app'
+    project: 'test'
+    organization: 'QoveryCommunity'
+routers:
+    - name: 'main-express'
+      routes:
+          - application_name: 'test-express-app'
+            paths:
+                - '/*'
