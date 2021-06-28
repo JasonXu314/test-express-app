@@ -1,7 +1,7 @@
 ---
 application:
     name: 'test-express-app'
-    project: 'test'
+    project: 'test-express-app'
     organization: 'QoveryCommunity'
 routers:
     - name: 'main-express'
