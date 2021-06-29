@@ -4,6 +4,7 @@ const app = express();
 app.use(express.json());
 
 app.get('/hello', (req, res) => {
+	console.log('Received request for /hello');
 	if (req.body.name) {
 		res.status(200).send(`Hi, ${req.body.name}`);
 	} else if (req.query.name) {
@@ -22,7 +23,8 @@ app.get('/hello', (req, res) => {
 	}
 });
 
-app.get('/', (req, res) => {
+app.get('/', (_, res) => {
+	console.log('Received request for /');
 	res.status(200).send('Hi');
 });
 
